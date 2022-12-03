@@ -47,7 +47,7 @@ void destroy() {
 }
 
 void addTop(int val) {
-  node *p = malloc(sizeof(node));
+  node *p = (node *)malloc(sizeof(node));
   p->val = val;
   p->next = head;
   head = p;
